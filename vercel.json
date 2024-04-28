@@ -1,14 +1,14 @@
 {
-  "version":2,
-  "builds":[{
-    "src":"Todo/wsgi.py",
-    "use":"@vercel/python",
-    "config":{"maxLambdaSize":"15mb","runtime":"python 3.9" }
-  }],
-  "routers":[
+  "builds": [
     {
-      "src":"/(.*)",
-      "dest":"Todo/wsgi.py"
+      "src": "django_app_name/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "django_app_name/wsgi.py"
     }
   ]
 }
