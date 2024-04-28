@@ -76,12 +76,13 @@ WSGI_APPLICATION = 'Todo.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME':'myproject',
+        'ENGINE': 'django.db.backends.postgresql',
+        'URL':'postgresql://postgres:KPqMfkyzERLQUAcnyKnpFCmKEglfnmRh@monorail.proxy.rlwy.net:23841/railway',
+        'NAME':'railway',
         'USER':'postgres',
-        'PASSWORD':'8164',
-        'HOST':'localhost',
-        'PORT':'5432',
+        'PASSWORD':'KPqMfkyzERLQUAcnyKnpFCmKEglfnmRh',
+        'HOST':'monorail.proxy.rlwy.net',
+        'PORT':'23841',
     }
 }
 
